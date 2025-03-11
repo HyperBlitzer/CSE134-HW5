@@ -1,0 +1,73 @@
+:root {
+    --background-color: rgb(150, 171, 156);
+    --main-color: rgb(84, 117, 94);
+    --text-color: rgb(42, 50, 44);
+    --header-color: rgb(18, 21, 19);
+    --hover-color: rgb(69, 81, 71);
+    --port-header: rgb(42, 50, 44);
+    --port-color: rgb(150, 171, 156);
+    --font-family: 'Garamond', serif;
+    --custom-font: "Permanent Marker", serif;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--main-color);
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+nav > a {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 0.25rem 0.5rem;
+}
+
+
+nav > a:hover {
+    border-radius: 0.5rem;
+    background-color: var(--hover-color);
+}
+
+#about-section, #contact-section {
+    background-color: var(--main-color);
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 1.5rem;
+    padding: 10px;
+    border-radius: 10px;
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+main > h2 {
+    font-size: 2.5rem;
+    padding-left: 1em;
+}
+
+my-socials {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+my-socials a {
+    margin-bottom: 15px;
+}

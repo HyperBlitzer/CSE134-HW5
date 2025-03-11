@@ -1,0 +1,57 @@
+main {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+project-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-self: center;
+    background-color: var(--main-color);
+    margin: 0.5em;
+    height: 40vh;
+    width: 45vw;
+    border-radius: 15px;
+    border: 0.1rem, solid, var(--header-color);
+
+    transition: transform 0.1s ease, box-shadow 0.3s ease;
+}
+
+project-card h2 {
+    grid-column: span 2;
+    text-align: center;
+    background-color: var(--port-header);
+    color: var(--port-color);
+    border-radius: 13px 13px 0px 0px;
+    height: 5vh;
+    padding-top: 0.2em;
+}
+
+project-card picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+project-card img {
+    width: 20vw;
+}
+
+project-card p {
+    display: flex;
+    align-items: center;
+}
+
+project-card a {
+    grid-column: span 2;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+project-card a:hover {
+    text-decoration: underline;
+}
+
