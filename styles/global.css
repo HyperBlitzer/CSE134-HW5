@@ -10,6 +10,16 @@
     --custom-font: "Permanent Marker", serif;
 }
 
+html, body {
+    overflow: auto;                  
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
 *,
 *::before,
 *::after {
@@ -48,9 +58,7 @@ nav > a:hover {
 
 #about-section, #contact-section {
     background-color: var(--main-color);
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 1.5rem;
+    margin: 1.5rem 15%;
     padding: 10px;
     border-radius: 10px;
     line-height: 1.6;
@@ -62,6 +70,11 @@ main > h2 {
     padding-left: 1em;
 }
 
+main > p {
+    font-family: var(--font-family);
+    font-size: 1.3rem;
+}
+
 my-socials {
     display: flex;
     justify-content: center;
@@ -70,4 +83,18 @@ my-socials {
 
 my-socials a {
     margin-bottom: 15px;
+}
+
+image-container {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.5em;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+image-container img {
+    width: 25%;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    object-fit: cover;
 }
