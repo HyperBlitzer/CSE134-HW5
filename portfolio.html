@@ -23,72 +23,8 @@
             </nav>
         </header>
         <main>
-            <project-card>
-                <h2>Lifesaver App</h2>
-                <picture>
-                    <img src="assets/images/lifesaverMR.png" alt="livesaver app screenshot from youtube video">
-                </picture>
-                <p> 
-                    Collaborated in a team of 4 to develop an MR app to help users navigate through hazardous AQI zones via wayfinding.
-                    Created seamless menu navigation using hand tracking, symbolic input and voice recognition with Meta XR.
-                    Implemented tutorial for users to learn about SCBA gear in VR with a World. We won most intuitive controls
-                    and best aesthetics from a panel of faculty.
-                </p>
-                <a href="https://youtu.be/RXyivbpIYBw?si=iuMN4b9d0AefYRlW">Youtube</a>
-            </project-card>
-
-            <project-card>
-                <h2>Animation Player</h2>
-                <picture>
-                    <img src="assets/images/quatinterpo.png" alt="quaternion interpolation preview">
-                </picture>
-                <p>
-                    Program to load the skeleton and skin information of a character. Renders the skeleton of the character through forward kinematics.
-                    Renders the skin of the character through the smooth skinning algorithm. The program can also read keyframe information and correctly
-                    calculate the value of the keyframe curve to play an animation. It can also do quaternion interpolation through SLERP and CATMULL-ROM
-                    interpolations. There is also a Cloth simulator with user controls and a toggle for wind.
-                </p>
-                <a href="null">None</a>
-            </project-card>
-
-            <project-card>
-                <h2>Quadcopter</h2>
-                <picture>
-                    <img src="assets/images/mainquad.png" alt="quadcopter PCB post soldering">
-                </picture>
-                <p>
-                    This is a custom built quadcopter where the PCB was created through Fusion 360. Oven and hand soldered with parts placed by hand.
-                    For the programming, the communication between the quadcopter and the remote was established through radio. The remote can control
-                    the throttle, pitch, roll and yaw. It can calibrate the gimbals, arm and disarm the quad. The control system was implemented by simple
-                    PID and the PID parameters were tuned with the remote. It established 10 seconds of flight.
-                </p>
-                <a href="https://github.com/UCSD-Quadcopter-Class/quadcopter-squadcopters">Github</a>
-            </project-card>
-
-            <project-card>
-                <h2>Sixth Sense</h2>
-                <picture>
-                    <img src="assets/images/sixthsense.png" alt="choose your fortune page">
-                </picture>
-                <p>
-                    Collaborated with a group of 11 to design an implement a Fortune Telling App. Integrated Figma desing into
-                    HTML and CSS. Implemented user authentication, saving of fortunes and sound control. Employed CI/CD pipeline with 
-                    a code linter, javascript documentation creator, code compression and unit testing for each of the pages.
-                </p>
-                <a href="https://github.com/cse110-sp23-group6/SixthSense?tab=readme-ov-file">Github</a>
-            </project-card>
-
-            <project-card>
-                <h2>Automatic Watering System</h2>
-                <picture>
-                    <img src="assets/images/watering.png" alt="different views of the watering system">
-                </picture>
-                <p>
-                    A self watering plant system that uses a moisture sensor to trigger a pump to transfer water into the soil. The design of the pump
-                    holder and battery was created through Fusion 360 and was 3-D printed. The system was programmed through Arduino.                    
-                </p>
-                <a href="https://docs.google.com/presentation/d/1Cya_2a8MqgzB-kvAvkZMPw7j7cc_RgHbn6zttAVKEEU/edit?usp=sharing">Presentation</a>
-            </project-card>
+            <button id="local">Load Local</button>
+            <button id="server">Load Remote</button>
         </main>
     </body>
 </html>
