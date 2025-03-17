@@ -55,3 +55,20 @@ project-card a:hover {
     text-decoration: underline;
 }
 
+
+@media screen and (max-width: 900px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    project-card {
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        height: auto;
+    }
+    project-card img {
+        width: 50vw;
+        height: auto;
+    }
+}

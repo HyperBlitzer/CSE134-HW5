@@ -1,0 +1,3 @@
+I divided the contents of the project into seperate pages (index, about, contact, portfolio) to not cram so much info into a single page.
+Added visual pizzazz to the page such as, adding favicons to each page, images to the about and icons to the contact section to make the project
+less bland. Along with this I also changed the main palette of the page to focus on a specific shade of color (green) instead of a clashing color scheme of green and blue. Added media queries that restructure the portfolio page from 2 per column into 1 and the contents inside the project-card become hamburger style. 
