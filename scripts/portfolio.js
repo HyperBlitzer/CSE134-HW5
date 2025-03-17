@@ -86,6 +86,7 @@ function localLoad() {
 
     stored.forEach(project => {
         const card = document.createElement('project-card');
+        console.log(project);
         card.projectData = project;
         main.appendChild(card);
     });

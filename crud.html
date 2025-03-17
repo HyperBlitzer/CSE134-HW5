@@ -7,6 +7,8 @@
         <meta name="description" content="Crud app section for extra credit">
         <meta name="keywords" content="CRUD crud app application extracredit">
         <link rel="icon" type="image/x-icon" href="assets/icons/crud.ico">
+        <link rel="stylesheet" href="styles/crud.css">
+        <link rel="stylesheet" href="styles/global.css">
         <title>CRUD</title>
     </head>
     <body>
@@ -20,7 +22,29 @@
             </nav>
         </header>
         <main>
-            <p>CRUD</p>
+
         </main>
+        <footer>
+            <form id="projectForm">
+                <label for="projectname">Project Name</label>
+                <br>
+                <input type="text" name="projectname" id="projectname" required>
+                <br>
+                <label for="description">Project Description</label>
+                <br>
+                <textarea name="description" id="description" rows="5" cols="40"></textarea required>
+                <br>
+                <label for="image">Project Image</label>
+                <br>
+                <input type="file" name="image" id="image" accept="image/*" required>
+                <br>
+                <label for="link">Link</label>
+                <br>
+                <input type="url" name="link" id="link" required>
+                <br>
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </footer>
     </body>
+    <script src="scripts/crud.js"></script>
 </html>
